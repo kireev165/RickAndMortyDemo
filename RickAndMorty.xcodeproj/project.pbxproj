@@ -22,6 +22,7 @@
 		8A1CFE602816118700084EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1CFE662816138F00084EED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8A1CFE672816139000084EED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8A1CFE682816161C00084EED /* WebAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WebAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 			children = (
 				8A1CFE662816138F00084EED /* .gitignore */,
 				8A1CFE672816139000084EED /* README.md */,
+				8A1CFE682816161C00084EED /* WebAPI */,
 				8A1CFE512816118500084EED /* RickAndMorty */,
 				8A1CFE502816118500084EED /* Products */,
 			);
