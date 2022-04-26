@@ -11,6 +11,18 @@
 		8A1CFE552816118500084EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE542816118500084EED /* SceneDelegate.swift */; };
 		8A1CFE5C2816118700084EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1CFE5B2816118700084EED /* Assets.xcassets */; };
 		8A1CFE5F2816118700084EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1CFE5D2816118700084EED /* LaunchScreen.storyboard */; };
+		8A1CFE6A28175A8700084EED /* RootUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE6928175A8700084EED /* RootUI.swift */; };
+		8A1CFE6C28175A9A00084EED /* CharactersListUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE6B28175A9A00084EED /* CharactersListUI.swift */; };
+		8A1CFE7028175D7000084EED /* UIKitReusable in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE6F28175D7000084EED /* UIKitReusable */; };
+		8A1CFE73281760B700084EED /* CharactersListUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE72281760B700084EED /* CharactersListUICell.swift */; };
+		8A1CFE75281760DC00084EED /* CharactersListMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE74281760DC00084EED /* CharactersListMVP.swift */; };
+		8A1CFE77281764EF00084EED /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE76281764EF00084EED /* CharactersListPresenter.swift */; };
+		8A1CFE792817694300084EED /* RestAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE782817694300084EED /* RestAPI */; };
+		8A1CFE7B28176C0900084EED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE7A28176C0900084EED /* Strings.swift */; };
+		8A1CFE7D28176DF500084EED /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE7C28176DF500084EED /* CharactersListInteractor.swift */; };
+		8A1CFE802818A04500084EED /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE7F2818A04500084EED /* Nuke */; };
+		8A1CFE822818AE7400084EED /* UIKitConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE812818AE7400084EED /* UIKitConstraints */; };
+		8A1CFE842818B11C00084EED /* SwiftBackwardArrow in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE832818B11C00084EED /* SwiftBackwardArrow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +35,14 @@
 		8A1CFE662816138F00084EED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8A1CFE672816139000084EED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8A1CFE682816161C00084EED /* WebAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WebAPI; sourceTree = "<group>"; };
+		8A1CFE6928175A8700084EED /* RootUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootUI.swift; sourceTree = "<group>"; };
+		8A1CFE6B28175A9A00084EED /* CharactersListUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListUI.swift; sourceTree = "<group>"; };
+		8A1CFE6D28175BB900084EED /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
+		8A1CFE72281760B700084EED /* CharactersListUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListUICell.swift; sourceTree = "<group>"; };
+		8A1CFE74281760DC00084EED /* CharactersListMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListMVP.swift; sourceTree = "<group>"; };
+		8A1CFE76281764EF00084EED /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
+		8A1CFE7A28176C0900084EED /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = CharactersList/Strings.swift; sourceTree = "<group>"; };
+		8A1CFE7C28176DF500084EED /* CharactersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1CFE802818A04500084EED /* Nuke in Frameworks */,
+				8A1CFE7028175D7000084EED /* UIKitReusable in Frameworks */,
+				8A1CFE822818AE7400084EED /* UIKitConstraints in Frameworks */,
+				8A1CFE842818B11C00084EED /* SwiftBackwardArrow in Frameworks */,
+				8A1CFE792817694300084EED /* RestAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +67,10 @@
 				8A1CFE662816138F00084EED /* .gitignore */,
 				8A1CFE672816139000084EED /* README.md */,
 				8A1CFE682816161C00084EED /* WebAPI */,
+				8A1CFE6D28175BB900084EED /* Utils */,
 				8A1CFE512816118500084EED /* RickAndMorty */,
 				8A1CFE502816118500084EED /* Products */,
+				8A1CFE6E28175D7000084EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +85,35 @@
 		8A1CFE512816118500084EED /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				8A1CFE7A28176C0900084EED /* Strings.swift */,
 				8A1CFE522816118500084EED /* AppDelegate.swift */,
 				8A1CFE542816118500084EED /* SceneDelegate.swift */,
+				8A1CFE6928175A8700084EED /* RootUI.swift */,
+				8A1CFE71281760A000084EED /* CharactersList */,
 				8A1CFE5B2816118700084EED /* Assets.xcassets */,
 				8A1CFE5D2816118700084EED /* LaunchScreen.storyboard */,
 				8A1CFE602816118700084EED /* Info.plist */,
 			);
 			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		8A1CFE6E28175D7000084EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1CFE71281760A000084EED /* CharactersList */ = {
+			isa = PBXGroup;
+			children = (
+				8A1CFE74281760DC00084EED /* CharactersListMVP.swift */,
+				8A1CFE76281764EF00084EED /* CharactersListPresenter.swift */,
+				8A1CFE7C28176DF500084EED /* CharactersListInteractor.swift */,
+				8A1CFE6B28175A9A00084EED /* CharactersListUI.swift */,
+				8A1CFE72281760B700084EED /* CharactersListUICell.swift */,
+			);
+			path = CharactersList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,13 @@
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+				8A1CFE6F28175D7000084EED /* UIKitReusable */,
+				8A1CFE782817694300084EED /* RestAPI */,
+				8A1CFE7F2818A04500084EED /* Nuke */,
+				8A1CFE812818AE7400084EED /* UIKitConstraints */,
+				8A1CFE832818B11C00084EED /* SwiftBackwardArrow */,
+			);
 			productName = RickAndMorty;
 			productReference = 8A1CFE4F2816118500084EED /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 8A1CFE462816118400084EED;
+			packageReferences = (
+				8A1CFE7E2818A04500084EED /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 8A1CFE502816118500084EED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1CFE7D28176DF500084EED /* CharactersListInteractor.swift in Sources */,
+				8A1CFE6A28175A8700084EED /* RootUI.swift in Sources */,
+				8A1CFE75281760DC00084EED /* CharactersListMVP.swift in Sources */,
+				8A1CFE7B28176C0900084EED /* Strings.swift in Sources */,
 				8A1CFE532816118500084EED /* AppDelegate.swift in Sources */,
 				8A1CFE552816118500084EED /* SceneDelegate.swift in Sources */,
+				8A1CFE77281764EF00084EED /* CharactersListPresenter.swift in Sources */,
+				8A1CFE6C28175A9A00084EED /* CharactersListUI.swift in Sources */,
+				8A1CFE73281760B700084EED /* CharactersListUICell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +414,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A1CFE7E2818A04500084EED /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 10.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A1CFE6F28175D7000084EED /* UIKitReusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIKitReusable;
+		};
+		8A1CFE782817694300084EED /* RestAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RestAPI;
+		};
+		8A1CFE7F2818A04500084EED /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A1CFE7E2818A04500084EED /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		8A1CFE812818AE7400084EED /* UIKitConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIKitConstraints;
+		};
+		8A1CFE832818B11C00084EED /* SwiftBackwardArrow */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftBackwardArrow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A1CFE472816118500084EED /* Project object */;
 }
