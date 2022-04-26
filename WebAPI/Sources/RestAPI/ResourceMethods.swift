@@ -1,6 +1,8 @@
 import Foundation
 
 
+@available(iOS 10.0, *)
+@available(macOS 10.12, *)
 public struct ResourceMethods<Resource: Codable, Filters: QueryFilters> {
 
     public func getList(filter: Filters? = nil, page: Int? = nil, callback: @escaping (Result<ResourceList<Resource>, APIMethodError>) -> Void) {

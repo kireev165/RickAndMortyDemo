@@ -1,9 +1,21 @@
 import Foundation
 
 
+@available(macOS 10.12, *)
+@available(iOS 10.0, *)
 public struct ApiClient {
 
     public static let defaultBaseURL: URL = .init(string: "https://rickandmortyapi.com/api")!
+
+    public static let defaultJSONDecoder: JSONDecoder = makeDefaultJSONDecoder()
+    private static func makeDefaultJSONDecoder() -> JSONDecoder {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        return decoder
+    }
 
     public init(baseURL: URL = defaultBaseURL, session: URLSession = .shared, callbackQueue: DispatchQueue = .main) {
         self.baseURL = baseURL
@@ -34,8 +46,6 @@ public struct ApiClient {
 
 
     // MARK: - internal
-
-    static let defaultJSONDecoder: JSONDecoder = .init()
 
     func getCodableByURL<T: Codable>(codable: T.Type, url: URL, decoder: JSONDecoder = defaultJSONDecoder, callback: @escaping (Result<T, APIMethodError>) -> Void) {
         session.dataTask(with: url) { data, _, error in

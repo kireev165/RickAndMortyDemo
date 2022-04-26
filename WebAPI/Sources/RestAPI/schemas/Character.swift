@@ -85,7 +85,7 @@ extension Character {
         public let name: String
 
         /// The link to the location
-        public let link: URL
+        public let link: URL?
 
     }
 
