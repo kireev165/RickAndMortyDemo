@@ -19,6 +19,10 @@ final class CharactersListPresenter {
 
 extension CharactersListPresenter: CharactersListMVPViewPresenter {
 
+    func didScrollToTheEnd() {
+        model.loadMoreCharactersIfPossible()
+    }
+
     var numberOfRows: Int {
         model.characters?.count ?? 0
     }

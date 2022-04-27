@@ -23,6 +23,8 @@ protocol CharactersListMVPViewPresenter: AnyObject {
 
     func load()
 
+    func didScrollToTheEnd()
+
     func cell(for row: Int) -> CharactersListMVPViewCell
 
     func selectRow(at index: Int)
@@ -65,6 +67,8 @@ protocol CharactersListMVPModel: AnyObject {
     var characters: [CharactersListMVPModelCharacter]? { get }
 
     func loadCharacters()
+
+    func loadMoreCharactersIfPossible()
 
 }
 

@@ -40,6 +40,15 @@ final class CharactersListUI: UITableViewController {
         presenter.selectRow(at: indexPath.row)
     }
 
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // https://stackoverflow.com/a/51655105
+        let isReachingEnd = scrollView.contentOffset.y >= 0
+              && scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)
+        if isReachingEnd {
+            presenter.didScrollToTheEnd()
+        }
+    }
+
 
     // MARK: private
 
