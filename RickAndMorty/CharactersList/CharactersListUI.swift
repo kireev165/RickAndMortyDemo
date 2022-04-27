@@ -62,8 +62,7 @@ extension CharactersListUI: CharactersListMVPView {
     }
 
     func routeToDetails(id: Int) {
-        #warning("TODO: implement")
-        print("routeToDetails(id: \(id))")
+        navigationController?.pushViewController(CharacterDetailsUI(id: id), animated: true)
     }
 
     func set(isLoading: Bool) {

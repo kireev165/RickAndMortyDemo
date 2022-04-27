@@ -34,4 +34,27 @@ enum Strings {
 
     static let ok = String(localized: "OK", comment: "OK button")
 
+    static let statusTitle = String(localized: "Status", comment: "A title for a `status` field")
+
+    static func localizedValue(forStatus status: Character.Status) -> String {
+        switch status {
+        case .alive:
+            return aliveStatus
+        case .dead:
+            return deadStatus
+        case .unknown:
+            return unknownStatus
+        }
+    }
+
+    static let aliveStatus = String(localized: "Alive", comment: "`Alive` character status")
+
+    static let deadStatus = String(localized: "Dead", comment: "`Dead` character status")
+
+    static let unknownStatus = String(localized: "Unknown", comment: "`Unknown` (alive or dead) character status")
+
+    static let lastKnownLocationTitle = String(localized: "Last location", comment: "A title for a character's  `last known location` field")
+
+    static let episodesCountTitle = String(localized: "Episodes count", comment: "A title for a field describing an `episodes count` which a character appeared in")
+
 }
