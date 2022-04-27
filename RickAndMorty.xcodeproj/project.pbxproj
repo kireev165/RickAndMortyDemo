@@ -18,11 +18,11 @@
 		8A1CFE75281760DC00084EED /* CharactersListMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE74281760DC00084EED /* CharactersListMVP.swift */; };
 		8A1CFE77281764EF00084EED /* CharactersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE76281764EF00084EED /* CharactersListPresenter.swift */; };
 		8A1CFE792817694300084EED /* RestAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE782817694300084EED /* RestAPI */; };
-		8A1CFE7B28176C0900084EED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE7A28176C0900084EED /* Strings.swift */; };
 		8A1CFE7D28176DF500084EED /* CharactersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE7C28176DF500084EED /* CharactersListInteractor.swift */; };
 		8A1CFE802818A04500084EED /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE7F2818A04500084EED /* Nuke */; };
 		8A1CFE822818AE7400084EED /* UIKitConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE812818AE7400084EED /* UIKitConstraints */; };
 		8A1CFE842818B11C00084EED /* SwiftBackwardArrow in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1CFE832818B11C00084EED /* SwiftBackwardArrow */; };
+		8A1CFE862818C64400084EED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CFE852818C64400084EED /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +41,8 @@
 		8A1CFE72281760B700084EED /* CharactersListUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListUICell.swift; sourceTree = "<group>"; };
 		8A1CFE74281760DC00084EED /* CharactersListMVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListMVP.swift; sourceTree = "<group>"; };
 		8A1CFE76281764EF00084EED /* CharactersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListPresenter.swift; sourceTree = "<group>"; };
-		8A1CFE7A28176C0900084EED /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Strings.swift; path = CharactersList/Strings.swift; sourceTree = "<group>"; };
 		8A1CFE7C28176DF500084EED /* CharactersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListInteractor.swift; sourceTree = "<group>"; };
+		8A1CFE852818C64400084EED /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 		8A1CFE512816118500084EED /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				8A1CFE7A28176C0900084EED /* Strings.swift */,
+				8A1CFE852818C64400084EED /* Strings.swift */,
 				8A1CFE522816118500084EED /* AppDelegate.swift */,
 				8A1CFE542816118500084EED /* SceneDelegate.swift */,
 				8A1CFE6928175A8700084EED /* RootUI.swift */,
@@ -198,8 +198,8 @@
 			files = (
 				8A1CFE7D28176DF500084EED /* CharactersListInteractor.swift in Sources */,
 				8A1CFE6A28175A8700084EED /* RootUI.swift in Sources */,
+				8A1CFE862818C64400084EED /* Strings.swift in Sources */,
 				8A1CFE75281760DC00084EED /* CharactersListMVP.swift in Sources */,
-				8A1CFE7B28176C0900084EED /* Strings.swift in Sources */,
 				8A1CFE532816118500084EED /* AppDelegate.swift in Sources */,
 				8A1CFE552816118500084EED /* SceneDelegate.swift in Sources */,
 				8A1CFE77281764EF00084EED /* CharactersListPresenter.swift in Sources */,
