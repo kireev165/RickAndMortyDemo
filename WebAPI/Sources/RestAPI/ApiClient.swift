@@ -1,12 +1,16 @@
 import Foundation
 
 
+/// The Rick and Morty REST API client.
+///
+/// An API client for `https://rickandmortyapi.com`.
 @available(macOS 10.12, *)
 @available(iOS 10.0, *)
 public struct ApiClient {
 
     public static let defaultBaseURL: URL = .init(string: "https://rickandmortyapi.com/api")!
 
+    // Probably shouldn't be public since it is used in internal API
     public static let defaultJSONDecoder: JSONDecoder = makeDefaultJSONDecoder()
     private static func makeDefaultJSONDecoder() -> JSONDecoder {
         let formatter = DateFormatter()
@@ -17,29 +21,40 @@ public struct ApiClient {
         return decoder
     }
 
+    /// Create an API client.
+    ///
+    /// - parameter baseURL: A base URL of the API. Default is `https://rickandmortyapi.com/api`.
+    /// - parameter session: A `URLSession` to perform networking tasks with.
+    /// - parameter callbackQueue: A queue to execute callbacks on.
     public init(baseURL: URL = defaultBaseURL, session: URLSession = .shared, callbackQueue: DispatchQueue = .main) {
         self.baseURL = baseURL
         self.session = session
         self.callbackQueue = callbackQueue
     }
 
+    /// A base URL of the API.
     public let baseURL: URL
 
+    /// A `URLSession` to perform networking tasks with.
     public let session: URLSession
 
+    /// A queue to execute callbacks on.
     public let callbackQueue: DispatchQueue
 
 
     // MARK: - resources
 
+    /// `/character` endpoints
     public var character: ResourceMethods<Character, CharacterQueryFilters> {
         .init(client: self, path: "character")
     }
 
+    /// `/location` endpoints
     public var location: ResourceMethods<Location, LocationQueryFilters> {
         .init(client: self, path: "location")
     }
 
+    /// `/episode` endpoints
     public var episode: ResourceMethods<Episode, EpisodeQueryFilters> {
         .init(client: self, path: "episode")
     }
