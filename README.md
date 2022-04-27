@@ -14,3 +14,6 @@ iOS application for exploring Rick and Morty characters
 - [x] Список персонажей (1 экран)
     - [x] Постраничная загрузка
 - [x] Детальная информация о персонаже (2 экран)
+
+## Dependencies
+- [Nuke](https://github.com/kean/Nuke) для загрузки изображений
